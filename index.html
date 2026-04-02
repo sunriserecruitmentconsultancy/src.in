@@ -47,27 +47,19 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 25px;
+            padding: 12px 25px;
         }
 
         .logo-box {
             display: flex;
             align-items: center;
-            gap: 12px;
             text-decoration: none;
         }
 
         .logo-box img {
-            height: 45px; /* Adjust based on your logo shape */
+            height: 55px; /* Increased slightly since text is gone */
             width: auto;
             display: block;
-        }
-
-        .logo-text {
-            font-weight: 800;
-            font-size: 20px;
-            color: var(--dark);
-            letter-spacing: -0.5px;
         }
 
         nav { display: flex; align-items: center; }
@@ -136,7 +128,7 @@
         .hero-img img {
             width: 100%;
             border-radius: 24px;
-            box-shadow: var(--shadow-xl);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
         }
 
         /* --- SERVICES --- */
@@ -176,7 +168,7 @@
             border-bottom: 1px solid rgba(255,255,255,0.1);
         }
 
-        /* --- FOOTER (CONTACT FIX) --- */
+        /* --- FOOTER --- */
         footer {
             background: #fff;
             padding: 80px 25px 40px;
@@ -192,6 +184,8 @@
         }
 
         .footer-logo { margin-bottom: 20px; }
+        .footer-logo img { height: 60px; width: auto; }
+        
         .footer-col h4 { margin-bottom: 25px; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; }
         
         .contact-link {
@@ -208,6 +202,7 @@
             color: var(--accent);
             width: 20px;
             font-size: 18px;
+            text-align: center;
         }
 
         .contact-link:hover { color: var(--dark); }
@@ -243,7 +238,6 @@
     <div class="nav-container">
         <a href="#" class="logo-box">
             <img src="logo.png" alt="Sunrise Logo">
-            <span class="logo-text">SUNRISE CONSULTANCY</span>
         </a>
         <nav>
             <a href="#">Home</a>
@@ -294,72 +288,3 @@
     <h2 style="margin-bottom: 40px; font-size: 32px;">Open Mandates</h2>
     <div class="job-item">
         <div>
-            <h4>US Accounting & Taxation</h4>
-            <p style="opacity: 0.6; font-size: 14px;">3+ Years Experience • International Client</p>
-        </div>
-        <a href="https://forms.gle/i6zmoPvZLHGTANzr7" class="btn btn-dark" style="background: var(--accent); font-size: 12px; padding: 10px 20px;">Apply</a>
-    </div>
-    <div class="job-item">
-        <div>
-            <h4>Corporate Accountant</h4>
-            <p style="opacity: 0.6; font-size: 14px;">2+ Years Experience • Local & Remote</p>
-        </div>
-        <a href="https://forms.gle/i6zmoPvZLHGTANzr7" class="btn btn-dark" style="background: var(--accent); font-size: 12px; padding: 10px 20px;">Apply</a>
-    </div>
-</section>
-
-<section class="section-padding">
-    <div class="center-title">
-        <h2>Submit Your Details</h2>
-    </div>
-    <div style="border-radius: 30px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.05);">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdC78-KVHKo6jrD704b5clwaoNSMl7gMqixYjnPukhWjF39sQ/viewform?embedded=true" width="100%" height="800" frameborder="0">Loading…</iframe>
-    </div>
-</section>
-
-<footer id="contact">
-    <div class="footer-grid">
-        <div class="footer-col">
-            <div class="logo-box footer-logo">
-                <img src="logo.png" alt="Sunrise Logo">
-                <span class="logo-text">SUNRISE</span>
-            </div>
-            <p style="font-size: 14px; color: var(--slate);">Your strategic partner in global talent acquisition across borders.</p>
-        </div>
-        
-        <div class="footer-col">
-            <h4>Sitemap</h4>
-            <a href="#" class="contact-link" style="gap:0">Home</a>
-            <a href="#services" class="contact-link" style="gap:0">Services</a>
-            <a href="#jobs" class="contact-link" style="gap:0">Careers</a>
-        </div>
-
-        <div class="footer-col">
-            <h4>Contact Details</h4>
-            <a href="tel:+919638039035" class="contact-link">
-                <i class="fa-solid fa-phone"></i> +91 9638039035
-            </a>
-            <a href="mailto:sunriseconsultancy.hr@gmail.com" class="contact-link">
-                <i class="fa-solid fa-envelope"></i> sunriseconsultancy.hr@gmail.com
-            </a>
-            <a href="https://www.linkedin.com/company/sunrise-consultancy-0811/" target="_blank" class="contact-link">
-                <i class="fa-brands fa-linkedin"></i> LinkedIn Profile
-            </a>
-        </div>
-    </div>
-    <div style="text-align: center; margin-top: 60px; padding-top: 30px; border-top: 1px solid #eee; font-size: 12px; color: #999;">
-        © 2026 SUNRISE CONSULTANCY. ALL RIGHTS RESERVED.
-    </div>
-</footer>
-
-<a href="https://wa.me/919638039035" class="whatsapp-btn" target="_blank">
-    <i class="fa-brands fa-whatsapp"></i>
-</a>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-    AOS.init({ duration: 1000, once: true });
-</script>
-
-</body>
-</html>
