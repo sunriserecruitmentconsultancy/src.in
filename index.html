@@ -52,9 +52,7 @@
         }
 
         .logo-box img { height: 55px; width: auto; display: block; }
-
         nav { display: flex; align-items: center; }
-
         nav a {
             text-decoration: none;
             color: var(--dark);
@@ -63,7 +61,6 @@
             margin-left: 30px;
             transition: 0.3s;
         }
-
         nav a:hover { color: var(--accent); }
 
         /* --- UI COMPONENTS --- */
@@ -97,7 +94,6 @@
             display: inline-block;
             transition: 0.3s cubic-bezier(0.2, 1, 0.3, 1);
         }
-
         .btn-dark { background: var(--dark); color: white; }
         .btn-dark:hover { transform: translateY(-3px); box-shadow: 0 15px 30px rgba(15,23,42,0.2); }
 
@@ -111,117 +107,32 @@
             gap: 50px;
             align-items: center;
         }
-
         .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(40px, 5vw, 68px); line-height: 1.1; margin-bottom: 25px; }
         .hero p { font-size: 19px; color: var(--slate); margin-bottom: 40px; }
         .hero-img img { width: 100%; border-radius: 30px; box-shadow: 0 30px 60px rgba(0,0,0,0.12); }
 
         /* --- INDUSTRY GRID --- */
-        .industry-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 25px;
-            margin-top: 50px;
-        }
-
-        .industry-card {
-            background: var(--white);
-            padding: 40px;
-            border-radius: 24px;
-            border: 1px solid rgba(0,0,0,0.03);
-            transition: 0.4s;
-        }
-
-        .industry-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
-            border-color: var(--accent);
-        }
-
+        .industry-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; margin-top: 50px; }
+        .industry-card { background: var(--white); padding: 40px; border-radius: 24px; border: 1px solid rgba(0,0,0,0.03); transition: 0.4s; }
+        .industry-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08); border-color: var(--accent); }
         .industry-card i { font-size: 32px; color: var(--accent); margin-bottom: 20px; display: block; }
         .industry-card h3 { font-size: 22px; margin-bottom: 10px; }
         .industry-card .sub-roles { font-size: 12px; font-weight: 800; color: var(--slate); text-transform: uppercase; display: block; margin-bottom: 15px; letter-spacing: 0.5px; }
-        .industry-card p { font-size: 15px; color: var(--slate); }
 
-        /* --- IMPACT STATS --- */
-        .impact-section {
-            background: var(--dark);
-            color: white;
-            padding: 100px 5%;
-            text-align: center;
-            border-radius: 60px;
-            margin: 40px 20px;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 40px;
-            max-width: 1100px;
-            margin: 60px auto 0;
-        }
-
-        .stat-card h2 { font-size: 48px; color: var(--accent); font-family: 'Playfair Display', serif; }
-
-        /* --- GLOBAL REACH --- */
-        .global-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            margin-top: 50px;
-        }
-
-        .country-card {
-            background: rgba(255,255,255,0.05);
-            padding: 30px;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            border: 1px solid rgba(255,255,255,0.1);
-            transition: 0.3s;
-        }
-
-        .country-card:hover { background: rgba(255,255,255,0.12); transform: scale(1.03); }
-        .flag-icon { font-size: 40px; }
-        .country-info h4 { font-size: 18px; color: var(--accent); }
-        .country-info p { font-size: 13px; opacity: 0.8; line-height: 1.4; }
-
-        /* --- JOBS --- */
-        .jobs-container { background: #f1f5f9; padding: 60px 40px; border-radius: 40px; margin-top: 40px; }
-        .job-item { display: flex; justify-content: space-between; align-items: center; padding: 25px 0; border-bottom: 1px solid rgba(0,0,0,0.05); }
-
-        /* --- REVIEWS SECTION --- */
-        .reviews-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-
-        .review-card {
-            background: var(--white);
-            padding: 35px;
-            border-radius: 24px;
-            border: 1px solid rgba(0,0,0,0.05);
-            position: relative;
-            transition: 0.3s;
-        }
-
-        .review-card:hover {
-            box-shadow: 0 20px 40px rgba(15, 23, 42, 0.05);
-        }
-
+        /* --- REVIEWS --- */
+        .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 50px; }
+        .review-card { background: var(--white); padding: 35px; border-radius: 24px; border: 1px solid rgba(0,0,0,0.05); position: relative; }
         .stars { color: #FFB800; margin-bottom: 15px; font-size: 14px; }
         .review-text { font-size: 15px; color: var(--slate); font-style: italic; margin-bottom: 20px; }
-        .candidate-info strong { font-size: 16px; display: block; }
-        .candidate-info span { font-size: 12px; color: var(--accent); font-weight: 700; text-transform: uppercase; }
         .google-icon { position: absolute; top: 35px; right: 35px; color: #4285F4; font-size: 20px; opacity: 0.2; }
+
+        /* --- MAP SECTION --- */
+        .map-container { width: 100%; border-radius: 30px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.08); border: 1px solid #eee; }
+        .map-container iframe { width: 100% !important; height: 450px; border: 0; }
 
         /* --- FOOTER --- */
         footer { background: #fff; padding: 100px 5% 40px; border-top: 1px solid #eee; }
         .footer-grid { max-width: 1200px; margin: auto; display: grid; grid-template-columns: 1fr 1fr 1.5fr; gap: 60px; }
-        .footer-logo img { height: 60px; width: auto; margin-bottom: 20px; }
         .contact-link { display: flex; align-items: flex-start; gap: 12px; text-decoration: none; color: var(--slate); margin-bottom: 15px; font-size: 14px; }
         .contact-link i { color: var(--accent); width: 20px; text-align: center; margin-top: 4px; }
 
@@ -230,9 +141,7 @@
         @media (max-width: 850px) {
             .hero { grid-template-columns: 1fr; text-align: center; }
             .footer-grid { grid-template-columns: 1fr; gap: 40px; }
-            .job-item { flex-direction: column; gap: 20px; text-align: center; }
             nav { display: none; }
-            .impact-section { border-radius: 30px; margin: 10px; }
         }
     </style>
 </head>
@@ -245,9 +154,9 @@
         <nav>
             <a href="#">Home</a>
             <a href="#expertise">Expertise</a>
-            <a href="#global">Global</a>
             <a href="#jobs">Careers</a>
             <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
             <a href="https://forms.gle/i6zmoPvZLHGTANzr7" class="btn btn-dark" style="padding: 10px 24px; margin-left: 20px; font-size: 13px;">Apply Now</a>
         </nav>
     </div>
@@ -270,203 +179,21 @@
 
 <section id="expertise" class="section-padding">
     <div style="text-align: center;">
-        <span class="badge" data-aos="fade-up">Domestic Excellence</span>
-        <h2 class="title-serif" data-aos="fade-up">Serving Industries Across India</h2>
+        <span class="badge" data-aos="fade-up">Industry Expertise</span>
+        <h2 class="title-serif" data-aos="fade-up">Serving Specialized Sectors</h2>
     </div>
-
     <div class="industry-grid">
         <div class="industry-card" data-aos="fade-up">
             <i class="fa-solid fa-city"></i>
             <h3>Construction & Real Estate</h3>
-            <span class="sub-roles">Engineers • Architects • Project Coordinators • HSE Experts</span>
-            <p>Site engineers, project managers, interior designers, and construction supervisors.</p>
+            <span class="sub-roles">Engineers • Architects • Project Managers</span>
+            <p>Providing specialized staffing for large-scale infrastructure and residential projects.</p>
         </div>
-
         <div class="industry-card" data-aos="fade-up" data-aos-delay="100">
-            <i class="fa-solid fa-gears"></i>
-            <h3>Engineering & Manufacturing</h3>
-            <span class="sub-roles">Mechanical • Electrical • QA/QC • Production Heads</span>
-            <p>QA/QC managers, maintenance engineers, and plant supervisors.</p>
-        </div>
-
-        <div class="industry-card" data-aos="fade-up" data-aos-delay="200">
             <i class="fa-solid fa-chart-line"></i>
             <h3>Accounting & Finance</h3>
-            <span class="sub-roles">CA • Analysts • Tax • CFOs</span>
-            <p>Chartered accountants, auditors, financial analysts, and finance managers.</p>
+            <span class="sub-roles">CA • Tax Experts • CFOs</span>
+            <p>Connecting businesses with financial experts for domestic and US-based accounting.</p>
         </div>
-
-        <div class="industry-card" data-aos="fade-up" data-aos-delay="100">
-            <i class="fa-solid fa-bullhorn"></i>
-            <h3>Marketing & Creative</h3>
-            <span class="sub-roles">Designers • Content • Strategists</span>
-            <p>Content creators, graphic designers, brand managers, and digital marketers.</p>
-        </div>
-
         <div class="industry-card" data-aos="fade-up" data-aos-delay="200">
-            <i class="fa-solid fa-laptop-code"></i>
-            <h3>Technology & IT</h3>
-            <span class="sub-roles">Software Engineers • IT Experts • Admins • Managers</span>
-            <p>Developers, system administrators, data analysts, and tech support specialists.</p>
-        </div>
-    </div>
-</section>
-
-<section class="impact-section" data-aos="zoom-in">
-    <span class="badge" style="color: white; border: 1px solid rgba(255,255,255,0.3); background: transparent;">TRACK RECORD</span>
-    <h2 class="title-serif" style="color: white;">Our Global Presence</h2>
-    <div class="stats-grid">
-        <div class="stat-card"><h2>50+</h2><p>Placements</p></div>
-        <div class="stat-card"><h2>10+</h2><p>Clients</p></div>
-        <div class="stat-card"><h2>98%</h2><p>Retention</p></div>
-        <div class="stat-card"><h2>24/7</h2><p>Support</p></div>
-    </div>
-</section>
-
-<section id="global" class="section-padding" style="background: var(--dark); color: white; border-radius: 60px; margin: 40px 20px;">
-    <div style="text-align: center;">
-        <span class="badge" style="background: rgba(255,255,255,0.1); color: white;">Global Network</span>
-        <h2 class="title-serif" style="color: white;">Global Reach, Local Expertise</h2>
-        <p style="opacity: 0.7; max-width: 600px; margin: auto;">Connecting elite professional talent with world-class opportunities.</p>
-    </div>
-
-    <div class="global-grid">
-        <div class="country-card" data-aos="zoom-in">
-            <span class="flag-icon">🇮🇳</span>
-            <div class="country-info"><h4>India</h4><p>Pan-India recruitment across all sectors</p></div>
-        </div>
-        <div class="country-card" data-aos="zoom-in" data-aos-delay="100">
-            <span class="flag-icon">🇦🇪</span>
-            <div class="country-info"><h4>UAE</h4><p>Accounting, Finance, Engineering & Corporate roles</p></div>
-        </div>
-        <div class="country-card" data-aos="zoom-in" data-aos-delay="200">
-            <span class="flag-icon">🇬🇧</span>
-            <div class="country-info"><h4>United Kingdom</h4><p>Professional services and corporate placements</p></div>
-        </div>
-        <div class="country-card" data-aos="zoom-in">
-            <span class="flag-icon">🇺🇸</span>
-            <div class="country-info"><h4>United States</h4><p>Specialized roles in finance and technology</p></div>
-        </div>
-        <div class="country-card" data-aos="zoom-in" data-aos-delay="100">
-            <span class="flag-icon">🇦🇺</span>
-            <div class="country-info"><h4>Australia</h4><p>Engineering, accounting, and corporate positions</p></div>
-        </div>
-        <div class="country-card" data-aos="zoom-in" data-aos-delay="200">
-            <span class="flag-icon">🇨🇦</span>
-            <div class="country-info"><h4>Canada</h4><p>Finance, engineering, and management services</p></div>
-        </div>
-    </div>
-</section>
-
-<section id="jobs" class="section-padding">
-    <div class="center-title" style="text-align: center; margin-bottom: 50px;">
-        <span class="badge">Careers</span>
-        <h2 class="title-serif">Featured Openings</h2>
-    </div>
-    <div class="jobs-container">
-        <div class="job-item" data-aos="fade-up">
-            <div>
-                <h4 style="font-size: 18px;">US Accounting & Taxation</h4>
-                <p style="color: var(--slate); font-size: 14px;">3+ Years Experience • International Client</p>
-            </div>
-            <a href="https://forms.gle/i6zmoPvZLHGTANzr7" class="btn btn-dark" style="background: var(--accent); padding: 12px 25px;">Apply Now</a>
-        </div>
-        <div class="job-item" data-aos="fade-up" data-aos-delay="100">
-            <div>
-                <h4 style="font-size: 18px;">Corporate Accountant</h4>
-                <p style="color: var(--slate); font-size: 14px;">2+ Years Experience • Local & Remote</p>
-            </div>
-            <a href="https://forms.gle/i6zmoPvZLHGTANzr7" class="btn btn-dark" style="background: var(--accent); padding: 12px 25px;">Apply Now</a>
-        </div>
-    </div>
-</section>
-
-<section id="reviews" class="section-padding" style="background: #f1f5f9; border-radius: 60px; margin: 40px 20px;">
-    <div style="text-align: center;">
-        <span class="badge" data-aos="fade-up">Success Stories</span>
-        <h2 class="title-serif" data-aos="fade-up">Trusted by Top Talent</h2>
-    </div>
-
-    <div class="reviews-grid">
-        <div class="review-card" data-aos="fade-up">
-            <i class="fa-brands fa-google google-icon"></i>
-            <div class="stars">
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p class="review-text">"The recruitment process was seamless. Sunrise Consultancy helped me land a finance role in the UAE within 3 weeks. Highly professional team!"</p>
-            <div class="candidate-info">
-                <strong>Anjali Sharma</strong>
-                <span>Senior Accountant</span>
-            </div>
-        </div>
-
-        <div class="review-card" data-aos="fade-up" data-aos-delay="100">
-            <i class="fa-brands fa-google google-icon"></i>
-            <div class="stars">
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p class="review-text">"Excellent support for engineering roles. They understood my technical background perfectly and matched me with a great MNC."</p>
-            <div class="candidate-info">
-                <strong>Rahul Varma</strong>
-                <span>Project Engineer</span>
-            </div>
-        </div>
-
-        <div class="review-card" data-aos="fade-up" data-aos-delay="200">
-            <i class="fa-brands fa-google google-icon"></i>
-            <div class="stars">
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p class="review-text">"Best consultancy in Ahmedabad for international tax roles. Their guidance during the interview stages was invaluable."</p>
-            <div class="candidate-info">
-                <strong>Siddharth Shah</strong>
-                <span>Tax Analyst</span>
-            </div>
-        </div>
-    </div>
-    
-    <div style="text-align: center; margin-top: 40px;">
-        <a href="https://www.google.com/search?q=Sunrise+Consultancy+Ahmedabad&lrd=0x395e848aba5bd449:0x4648293020521ad,1" target="_blank" style="color: var(--slate); font-size: 13px; text-decoration: none; font-weight: 600;">
-            View more reviews on <span style="color: #4285F4;">G</span><span style="color: #EA4335;">o</span><span style="color: #FBBC05;">o</span><span style="color: #4285F4;">g</span><span style="color: #34A853;">l</span><span style="color: #EA4335;">e</span>
-        </a>
-    </div>
-</section>
-
-<footer id="contact">
-    <div class="footer-grid">
-        <div class="footer-col">
-            <div class="footer-logo"><img src="logo.png" alt="Sunrise Logo"></div>
-            <p style="font-size: 14px; color: var(--slate); margin-bottom: 20px;">Your trusted partner in global talent acquisition, providing strategic staffing solutions across borders.</p>
-        </div>
-        <div class="footer-col">
-            <h4 style="margin-bottom: 20px;">Quick Links</h4>
-            <a href="#" class="contact-link" style="padding-left: 0;">Home</a>
-            <a href="#expertise" class="contact-link" style="padding-left: 0;">Expertise</a>
-            <a href="#global" class="contact-link" style="padding-left: 0;">Global Reach</a>
-            <a href="#jobs" class="contact-link" style="padding-left: 0;">Current Openings</a>
-        </div>
-        <div class="footer-col">
-            <h4 style="margin-bottom: 20px;">Contact Details</h4>
-            <a href="https://maps.app.goo.gl/9R4j5jXfP3P6B8B7A" target="_blank" class="contact-link">
-                <i class="fa-solid fa-location-dot"></i>
-                <span>A 424, Sun Westbank, near vallabh sadan riverfront,<br>opp. city gold cinema, ashram road,<br>ahmedabad - 380009 Gujarat</span>
-            </a>
-            <a href="tel:+919638039035" class="contact-link"><i class="fa-solid fa-phone"></i> +91 9638039035</a>
-            <a href="mailto:sunriseconsultancy.hr@gmail.com" class="contact-link"><i class="fa-solid fa-envelope"></i> sunriseconsultancy.hr@gmail.com</a>
-            <a href="https://www.linkedin.com/company/sunrise-consultancy-0811/" target="_blank" class="contact-link"><i class="fa-brands fa-linkedin"></i> LinkedIn Profile</a>
-        </div>
-    </div>
-    <div style="text-align: center; margin-top: 60px; padding-top: 30px; border-top: 1px solid #eee; font-size: 12px; color: #999;">
-        © 2026 SUNRISE CONSULTANCY. ALL RIGHTS RESERVED.
-    </div>
-</footer>
-
-<a href="https://wa.me/919638039035" class="whatsapp-btn" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-    AOS.init({ duration: 1000, once: true });
-</script>
-
-</body>
-</html>
+            <i class
